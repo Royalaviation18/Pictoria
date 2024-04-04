@@ -43,6 +43,25 @@ class MainActivity : AppCompatActivity() {
             image = findViewById(idImagetoShowInt)
             image.alpha = 1f
         }
+
+        next.setOnClickListener {
+            //current Image Id in string
+            val idCurrentImage = "ivMotivation$currentImage"
+            //converting the String to int address associated with it
+            //idCurrentImage is the string type, id is the thing which we are trying to convert (or with we are currently working)
+            val idCurrentImageIntFormat =
+                this.resources.getIdentifier(idCurrentImage, "id", packageName)
+            image = findViewById(idCurrentImageIntFormat)
+            image.alpha = 0f
+
+            //handling the corner case from 0-> to 4th image
+            currentImage = (5 + currentImage + 1) % 5
+            val idImageToShowString = "ivMotivation$currentImage"
+            val idImagetoShowInt =
+                this.resources.getIdentifier(idImageToShowString, "id", packageName)
+            image = findViewById(idImagetoShowInt)
+            image.alpha = 1f
+        }
     }
 
 
