@@ -3,6 +3,7 @@ package com.example.pictoria
 import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -12,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     var currentImage = 0
     lateinit var image: ImageView
+    var names = arrayOf("You got this","Remember why you started","Difficult roads lead to beautiful destinations","You can do it","You can win if you want")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
         val prev = findViewById<ImageButton>(R.id.btnPrev)
         val next = findViewById<ImageButton>(R.id.btnNext)
+        val quote = findViewById<TextView>(R.id.tvQuote)
 
         prev.setOnClickListener {
             //current Image Id in string
@@ -42,6 +45,7 @@ class MainActivity : AppCompatActivity() {
                 this.resources.getIdentifier(idImageToShowString, "id", packageName)
             image = findViewById(idImagetoShowInt)
             image.alpha = 1f
+            quote.text = names[currentImage]
         }
 
         next.setOnClickListener {
@@ -61,6 +65,7 @@ class MainActivity : AppCompatActivity() {
                 this.resources.getIdentifier(idImageToShowString, "id", packageName)
             image = findViewById(idImagetoShowInt)
             image.alpha = 1f
+            quote.text = names[currentImage]
         }
     }
 
