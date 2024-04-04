@@ -18,7 +18,7 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/ivMotivation1"
+        android:id="@+id/ivMotivation0"
         android:layout_width="wrap_content"
         android:layout_height="400dp"
         android:layout_below="@+id/tvHeading"
@@ -26,7 +26,7 @@
         android:src="@drawable/pic0" />
 
     <ImageView
-        android:id="@+id/ivMotivation2"
+        android:id="@+id/ivMotivation1"
         android:layout_width="wrap_content"
         android:layout_height="400dp"
         android:layout_below="@+id/tvHeading"
@@ -35,7 +35,7 @@
         android:src="@drawable/pic1" />
 
     <ImageView
-        android:id="@+id/ivMotivation3"
+        android:id="@+id/ivMotivation2"
         android:layout_width="wrap_content"
         android:layout_height="400dp"
         android:layout_below="@+id/tvHeading"
@@ -44,7 +44,7 @@
         android:src="@drawable/pic2" />
 
     <ImageView
-        android:id="@+id/ivMotivation4"
+        android:id="@+id/ivMotivation3"
         android:layout_width="wrap_content"
         android:layout_height="400dp"
         android:layout_below="@+id/tvHeading"
@@ -53,7 +53,7 @@
         android:src="@drawable/pic3" />
 
     <ImageView
-        android:id="@+id/ivMotivation5"
+        android:id="@+id/ivMotivation4"
         android:layout_width="wrap_content"
         android:layout_height="400dp"
         android:layout_below="@+id/tvHeading"
